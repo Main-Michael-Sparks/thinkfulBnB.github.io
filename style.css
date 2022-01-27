@@ -1,0 +1,294 @@
+/* -------  General Styles ------- */
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0 10px 10px 10px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+p {
+  line-height: 1.5em;
+  margin: 0;
+}
+
+section {
+  padding: 20px;
+}
+
+section.alternate-background {
+  background-color: #00a699;
+  color: #fff;
+}
+
+main img {
+  width: 100px;
+}
+
+.aboutGroup{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.aboutItem{
+  width: 100%;
+  margin: 2% 0;
+}
+
+.ideasGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ideasItem {
+  width: 100%;
+}
+
+.hostGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hostItem {
+  display: flex;
+  width: 100%;
+}
+
+/* ---  Groups & Items --- */
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+}
+
+/* -------  Navigation ------- */
+
+header {
+  background-color: #ff385c;
+  padding: 20px 20px 0 20px;
+  text-align: center;
+}
+
+.logo {
+  font-family: "Pangolin", cursive;
+  font-size: 72px;
+  color: #fff;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+}
+
+header nav ul li a:hover {
+  color: #bdbdbd;
+  text-decoration: none;
+}
+
+.navGroup{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.headerGroup{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+/* -------  Search Form ------- */
+form {
+  border: 2px solid #ff385c;
+  padding: 10px;
+}
+
+form label {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+form select,
+form input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 180px;
+}
+
+form button {
+  background-color: #ff385c;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  padding: 15px;
+  width: 100%;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.formLabelInputRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 5px;
+
+}
+
+/* -------  Footer ------- */
+
+footer {
+  background-color: #ff385c;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* -------  Media Query ------- */
+
+@media all and (min-width: 480px){
+
+  /* Header and Nav */
+
+  header {
+    background-color: #ff385c;
+    padding: 20px 20px 0 20px;
+  }
+
+  .navGroup{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10%;
+  }
+
+  .headerGroup{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  /* Form */
+  
+  form label {
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  form select,
+  form input {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  form button {
+    background-color: #ff385c;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    padding: 15px;
+    width: 15%;
+  }
+  
+  .formGroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .formLabelInputRow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /*about*/
+
+  .aboutGroup{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .aboutItem{
+    display: flex;
+    margin-top: 0;
+    margin-left: 1%;
+    width: 25%;
+  }
+  #aboutPara {
+    padding: 3%;
+  }
+  /* ideas */
+
+
+.ideasItem {
+  width: 97%;
+}
+
+.ideaRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.ideaCol{
+  display: flex;
+  flex-direction: column;
+}
+
+.hostGroup {
+  display: flex;
+  flex-direction: row;
+}
+
+.hostCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.hostItem {
+  display: flex;
+  flex-direction: column;
+  width: 48.5%;
+  padding-right: 1.5%;
+}
+
+}
